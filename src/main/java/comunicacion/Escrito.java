@@ -9,7 +9,7 @@ public abstract class Escrito extends Pictograma{
 		super(origen);
 		this.titulo = titulo;
 		this.autor = autor;
-		this.paginas = paginas;
+		this.paginas = paginas; //Esta mal?
 	}
 	
 	public String getTitulo() {
