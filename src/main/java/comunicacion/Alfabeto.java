@@ -29,6 +29,7 @@ public class Alfabeto extends Pictograma {
 	public String interpretacion() {
 		return this.getInterpretacion();
 	}
+	int loquesea = 1;
 
 	@Override
 	public String toString() {
