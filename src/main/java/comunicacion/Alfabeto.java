@@ -3,23 +3,23 @@ package comunicacion;
 public class Alfabeto extends Pictograma {
 
 
-	private String letras;
+	private String[] letras;
 	private String interpretacion;
 	
 	
 	
 	
 	
-	public Alfabeto(String origen, String letras, String interpretacion) {
+	public Alfabeto(String origen, String[] letras, String interpretacion) {
 		super(origen);
 		this.letras = letras;
 		this.interpretacion = interpretacion;
 	}
 
 	public int cantidadLetras() { //Deberia de hacer un return de int
-		String varLetras = this.getLetras();
+		String[] varLetras = this.getLetras();
 		int numeroLetras = 0;
-		for (int index = 0; index < varLetras.length(); index++) {
+		for (int index = 0; index < varLetras.length; index++) {
 			numeroLetras ++;
 			
         }
@@ -32,20 +32,23 @@ public class Alfabeto extends Pictograma {
 
 	@Override
 	public String toString() {
-		String Alfabeto;
-		Alfabeto = "A, " + "B, " + "C, "+ "D, "+ "E, "+ "F, "+ "G, "+ "H, "+ "I, "+ "J, "+ "K, "+ "L, "
-				+ "M, " + "N, " + "O, " + "P, " + "Q, " + "R, " + "S, " + "T, " + "U, " + "V, " + "W, "
-				+ "X, " + "Y, " + "Z";
-		return Alfabeto; //Ver
+		String Alfabeto = null;
+		for (int index = 0; index < this.letras.length; index++) {
+			Alfabeto = this.letras[index]+ ", ";}
+
+		return Alfabeto;
+		
 	}
-	
+		
+
+
 	
 
-	public String getLetras() {
+	public String[] getLetras() {
 		return letras;
 	}
 
-	public void setLetras(String letras) {
+	public void setLetras(String[] letras) {
 		this.letras = letras;
 	}
 

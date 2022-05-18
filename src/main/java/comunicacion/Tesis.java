@@ -2,13 +2,13 @@ package comunicacion;
 
 public class Tesis extends Escrito{
 	private String idea;
-	private String argumentos; //Preguntar el []
+	private String [] argumentos; //Preguntar el []
 	private String conclusion;
 	private String referencias;
 	private String interpretacion;
 	
 	
-	public Tesis(String origen, String titulo, String autor, int paginas, String idea, String argumentos,
+	public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos,
 			String conclusion, String referencias, String interpretacion) {
 		super(origen, titulo, autor, paginas);
 		this.idea = idea;
@@ -35,9 +35,9 @@ public class Tesis extends Escrito{
 	
 	@Override
 	public String toString() {	
-		String argumentosA = this.getArgumentos();
+		String [] argumentosA = this.getArgumentos();
 		int numeroArgumento = 0;
-		for (int index = 0; index < argumentosA.length(); index++) {
+		for (int index = 0; index < argumentosA.length; index++) {
 			numeroArgumento ++;
 			
         }
@@ -61,11 +61,11 @@ public class Tesis extends Escrito{
 		this.idea = idea;
 	}
 
-	public String getArgumentos() {
+	public String[] getArgumentos() {
 		return argumentos;
 	}
 
-	public void setArgumentos(String argumentos) {
+	public void setArgumentos(String[] argumentos) {
 		this.argumentos = argumentos;
 	}
 
