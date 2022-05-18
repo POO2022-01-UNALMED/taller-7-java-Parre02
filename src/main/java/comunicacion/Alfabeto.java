@@ -32,7 +32,7 @@ public class Alfabeto extends Pictograma {
 
 	@Override
 	public String toString() {
-		String Alfabeto = null;
+		String Alfabeto = "";
 		int Longitud = this.letras.length;
 		for (int index = 0; index < this.letras.length; index++) {
 			if(index != Longitud-1) {
