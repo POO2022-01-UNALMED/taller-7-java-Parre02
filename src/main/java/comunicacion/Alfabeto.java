@@ -33,10 +33,17 @@ public class Alfabeto extends Pictograma {
 	@Override
 	public String toString() {
 		String Alfabeto = null;
+		int Longitud = this.letras.length;
 		for (int index = 0; index < this.letras.length; index++) {
-			Alfabeto = this.letras[index]+ ", ";}
-
+			if(index != Longitud-1) {
+				Alfabeto = this.letras[index]+ ", ";
+			}
+			else if (index == Longitud-1){
+				Alfabeto = this.letras[index];}
+				
+			}
 		return Alfabeto;
+
 		
 	}
 		
