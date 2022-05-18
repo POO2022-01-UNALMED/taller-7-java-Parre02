@@ -32,8 +32,7 @@ public class Fabula extends Escrito  {
 		r += this.getTitulo() + "\n";
 		r += this.getAutor() + "\n";
 		r += this.getPaginas() + "\n";
-		r += this.getEnsenanza()+ "\n";
-		r += this.getInterpetacion();
+		r += this.getEnsenanza();
 		return  r;
 	}
 
