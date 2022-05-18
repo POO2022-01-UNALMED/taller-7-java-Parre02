@@ -1,13 +1,13 @@
 package comunicacion;
 
-public class Fabula extends Escrito  {
+public class fabula extends Escrito  {
 	private String ensenaza;
 	private String interpetacion;
 	
 	
 	
 	
-	public Fabula(String origen, String titulo, String autor, int paginas, String ensenaza, String interpetacion) {
+	public fabula(String origen, String titulo, String autor, int paginas, String ensenaza, String interpetacion) {
 		super(origen, titulo, autor, paginas);
 		this.ensenaza = ensenaza;
 		this.interpetacion = interpetacion;
