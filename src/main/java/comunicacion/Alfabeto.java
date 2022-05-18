@@ -36,10 +36,10 @@ public class Alfabeto extends Pictograma {
 		int Longitud = this.letras.length;
 		for (int index = 0; index < this.letras.length; index++) {
 			if(index != Longitud-1) {
-				Alfabeto = this.letras[index]+ ", ";
+				Alfabeto = Alfabeto + this.letras[index]+ ", ";
 			}
 			else if (index == Longitud-1){
-				Alfabeto = this.letras[index];}
+				Alfabeto = Alfabeto + this.letras[index];}
 				
 			}
 		return Alfabeto;
